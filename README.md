@@ -61,7 +61,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Anton- [@linkedIN](https://www.linkedin.com/in/anton-hudkou-365837239/) - email@example.com
+Anton- [@linkedIN](https://www.linkedin.com/in/anton-hudkou-365837239/) - antonhudkou@gmail.com
 
 Project Link: [https://github.com/gdkvntn/project-cards](https://github.com/gdkvntn/project-cards)
 
