@@ -50,12 +50,17 @@ table {
               box-sizing: border-box;
   }
   * ,*::before,*::after {
+  font-size: 24px;
+    font-family: Open-Sans, Helvetica, Sans-Serif;
       -webkit-box-sizing: inherit;
               box-sizing: inherit;
   }
   body {
-    
+    font-size: 24px;
     font-family: Open-Sans, Helvetica, Sans-Serif;
+  }
+  	input:focus-visible {
+    outline: none;
   }
 `;
 

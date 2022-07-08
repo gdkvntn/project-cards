@@ -2,6 +2,7 @@ import GlobalStyle from "./components/styles/GlobalStyle";
 import Header from "./components/Header";
 import { BrowserRouter } from "react-router-dom";
 import styled from "styled-components";
+import Home from "./components/unauthorized/Home";
 
 const AppContainer = styled.div`
   margin: 0 auto;
@@ -15,6 +16,7 @@ function App() {
       <AppContainer>
         <GlobalStyle />
         <Header />
+        <Home />
       </AppContainer>
     </BrowserRouter>
   );
