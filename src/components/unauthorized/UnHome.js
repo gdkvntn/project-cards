@@ -3,15 +3,11 @@ import styled from "styled-components";
 import Flex from "styled-flex-component";
 import { baseTheme } from "../styles/theme";
 
-const Container = styled(Flex)`
-  padding: 0 50px;
-  @media (max-width: 1100px) {
-    padding: 0 10px;
-    align-items: center;
-  }
+export const Container = styled(Flex)`
+  height: 90%;
+  margin: 0 10px;
   @media (max-width: 500px) {
-    padding: 0 10px;
-    align-items: center;
+    height: 80%;
   }
 `;
 
@@ -69,7 +65,7 @@ const Title = styled.h1`
   line-height: 77px;
   margin-bottom: 50px;
   color: ${baseTheme.color.beige};
-  margin-top: 100px;
+
   @media (max-width: 500px) {
     line-height: 44px;
     font-size: 36px;
@@ -114,9 +110,9 @@ const Submit = styled.input`
   }
 `;
 
-export default function Home() {
+export default function UnHome() {
   return (
-    <Container column justifyCenter>
+    <Container center column>
       <Title>Learn and grow</Title>
       <Form>
         <Flex column alignCenter>

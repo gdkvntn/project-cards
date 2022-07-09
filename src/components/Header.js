@@ -12,7 +12,11 @@ const HeaderContainer = styled.div`
   background-color: #ffffff25;
   height: 90px;
   @media (max-width: 720px) {
-    height: auto;
+    height: 70px;
+    padding: 20px;
+  }
+  @media (max-width: 500px) {
+    height: 120px;
     padding: 20px;
   }
 `;
@@ -65,7 +69,6 @@ const Input = styled.input`
 `;
 
 export default function Header() {
-  console.log(baseTheme);
   return (
     <HeaderContainer>
       <Navigation>

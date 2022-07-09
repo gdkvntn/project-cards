@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { baseTheme } from "./theme";
 
 const GlobalStyle = createGlobalStyle`
 html, body, div, span, applet, object, iframe,
@@ -58,8 +59,13 @@ table {
   body {
     font-size: 24px;
     font-family: Open-Sans, Helvetica, Sans-Serif;
+    background-image: url(img/fon.webp);
+   background-size: cover;
+   
+    height:100vh;
+  
   }
-  	input:focus-visible {
+  	textarea,input:focus-visible {
     outline: none;
   }
 `;

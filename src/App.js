@@ -1,13 +1,16 @@
 import GlobalStyle from "./components/styles/GlobalStyle";
 import Header from "./components/Header";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import styled from "styled-components";
-import Home from "./components/unauthorized/Home";
+import UnHome from "./components/unauthorized/UnHome";
+import Create from "./components/unauthorized/Create";
+import Profile from "./components/unauthorized/Profile";
+import Home from "./components/authorized/Home";
+import Cards from "./components/authorized/Cards";
 
 const AppContainer = styled.div`
-  margin: 0 auto;
-  background-image: url(img/fon.webp);
   height: 100vh;
+  margin: 0 auto;
 `;
 
 function App() {
@@ -16,7 +19,12 @@ function App() {
       <AppContainer>
         <GlobalStyle />
         <Header />
-        <Home />
+
+        <Routes>
+          <Route path="/" element={<Cards />} />
+          <Route path="/create" element={<Create />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
       </AppContainer>
     </BrowserRouter>
   );
